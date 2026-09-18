@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Edwin Ng — CTO / Head of Engineering</title>
+<meta name="description" content="Edwin Ng, CTO / Head of Engineering — a showcase of open-source projects and repositories." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="hero">
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <p class="eyebrow">Portfolio</p>
+      <h1>Edwin Ng</h1>
+      <p class="role">CTO / Head of Engineering</p>
+      <p class="bio">Building and leading engineering teams; sharing tools, experiments, and open-source work below.</p>
+      <div class="hero-links">
+        <a class="btn btn-primary" href="https://github.com/edwingoogle1" target="_blank" rel="noopener">GitHub Profile</a>
+        <a class="btn btn-ghost" href="#repos">View Projects</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <section id="repos" class="repos-section">
+    <div class="section-head">
+      <h2>Projects</h2>
+      <p class="section-sub">Live from GitHub — sorted by most recently updated.</p>
+    </div>
+
+    <div class="controls">
+      <input id="search" type="search" placeholder="Filter projects…" aria-label="Filter projects" />
+      <select id="sort" aria-label="Sort projects">
+        <option value="updated">Recently updated</option>
+        <option value="stars">Most stars</option>
+        <option value="name">Name (A–Z)</option>
+      </select>
+    </div>
+
+    <div id="status" class="status" role="status"></div>
+    <div id="repo-grid" class="repo-grid"></div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; <span id="year"></span> Edwin Ng</p>
+    <a href="https://github.com/edwingoogle1" target="_blank" rel="noopener">github.com/edwingoogle1</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
